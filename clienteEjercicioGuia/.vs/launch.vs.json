@@ -1,0 +1,18 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "managed",
+      "name": "Form1.Designer.cs",
+      "project": "WindowsFormsApplication1\\Form1.Designer.cs",
+      "projectTarget": ""
+    },
+    {
+      "type": "managed",
+      "name": "Form1.Designer.cs(1)",
+      "project": "WindowsFormsApplication1\\Form1.Designer.cs",
+      "projectTarget": ""
+    }
+  ]
+}
