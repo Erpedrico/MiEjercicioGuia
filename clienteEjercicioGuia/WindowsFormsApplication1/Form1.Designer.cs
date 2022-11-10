@@ -38,6 +38,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Longitud = new System.Windows.Forms.RadioButton();
             this.Bonito = new System.Windows.Forms.RadioButton();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.button4 = new System.Windows.Forms.Button();
+            this.cont = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +74,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.cont);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.statusStrip1);
             this.groupBox1.Controls.Add(this.alturaBox1);
             this.groupBox1.Controls.Add(this.altura);
             this.groupBox1.Controls.Add(this.button3);
@@ -82,7 +88,7 @@
             this.groupBox1.Controls.Add(this.nombre);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(363, 369);
+            this.groupBox1.Size = new System.Drawing.Size(489, 369);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
@@ -147,6 +153,33 @@
             this.Bonito.Text = "Dime si mi nombre es bonito";
             this.Bonito.UseVisualStyleBackColor = true;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(3, 344);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(483, 22);
+            this.statusStrip1.TabIndex = 9;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(360, 71);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(123, 56);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "¿Cuantos servocios?";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // cont
+            // 
+            this.cont.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cont.Location = new System.Drawing.Point(355, 140);
+            this.cont.Name = "cont";
+            this.cont.Size = new System.Drawing.Size(104, 36);
+            this.cont.TabIndex = 10;
+            this.cont.Text = "Nombre";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +207,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox alturaBox1;
         private System.Windows.Forms.RadioButton altura;
+        private System.Windows.Forms.Label cont;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
 
